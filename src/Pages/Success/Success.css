@@ -1,0 +1,8 @@
+.nav-links{
+    text-decoration: none;
+    font-weight: 500;
+    background-image:linear-gradient(orange,rgb(226, 192, 128));
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}

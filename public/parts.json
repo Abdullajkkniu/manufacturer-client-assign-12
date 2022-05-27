@@ -1,0 +1,34 @@
+[
+    {"id":1, "name": "Car-Break", "price": "$100", 
+        "quantity": "100",
+        "available": "1000",
+        "description": "Car break that is needed for every car", "img":"https://i.ibb.co/BTSvbYw/break.jpg"},
+    {"id":2, "name": "Car-Mirror", "price": "$50",
+        "quantity": "100",
+        "available": "1000", 
+        "description": "Best car-mirror for outstanding view", "img":"https://i.ibb.co/1QYwPnD/car-mirror.jpg"},
+    {"id":3, "name": "Head-Light", "price": "$40", 
+        "quantity": "100",
+        "available": "1000",
+        "description": "Super LED head-light for night view", "img":"https://i.ibb.co/68WGVTt/head-light.png"},
+    {"id":4, "name": "Car-Wheel", "price": "$150", 
+        "quantity": "100",
+        "available": "800",
+        "description": "Most durable Wheel with super quality breaking capability", "img":"https://i.ibb.co/ZK1T8Mg/car-wheel.png"},
+    {"id":5, "name": "Car-jack", "price": "$60", 
+        "quantity": "100",
+        "available": "1500",
+        "description": "Car jack that is most valuable for every car.", "img":"https://i.ibb.co/xMmC4Gt/jack.png"},
+    {"id":6, "name": "Car-Mirror", "price": "$50", 
+        "quantity": "100",
+        "available": "1000",
+        "description": "Super clear and durable mirror", "img":"https://i.ibb.co/jZpKzx3/mirror.jpg"},
+    {"id":7, "name": "Car-Mirror", "price": "$50", 
+        "quantity": "100",
+        "available": "1000",
+        "description": "Super clear and durable mirror", "img":"https://i.ibb.co/jZpKzx3/mirror.jpg"}
+    
+]
+
+
+
