@@ -1,47 +1,31 @@
 import React from 'react';
 import {useQuery} from 'react-query';
 import Loading from './Loading';
+import OrdersRow from './OrdersRow';
 const AllOrders = () => {
-    const {data: orders, isLoading}= useQuery('orders', ()=>fetch('http://localhost:5001/order').then(res=>res.json()));
+    const {data: orders, isLoading,}= useQuery('orders', ()=>fetch('http://localhost:5001/order').then(res=>res.json()));
     if(isLoading){
         return <Loading></Loading>
     }
     return (
         <div>
-            <h1>all orders: {orders.length}</h1>
+            <h1 className='text-center text-2xl font-bold my-4'>All orders: {orders.length}</h1>
             <div class="overflow-x-auto">
   <table class="table w-full">
     
     <thead>
       <tr>
         <th></th>
-        <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
+        <th>Email</th>
+        <th>Customer Name</th>
+        <th>Product Name</th>
+        <th>Quantity</th>
       </tr>
     </thead>
     <tbody>
-      
-      <tr>
-        <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
-      </tr>
-      
-      <tr>
-        <th>2</th>
-        <td>Hart Hagerty</td>
-        <td>Desktop Support Technician</td>
-        <td>Purple</td>
-      </tr>
-      
-      <tr>
-        <th>3</th>
-        <td>Brice Swyre</td>
-        <td>Tax Accountant</td>
-        <td>Red</td>
-      </tr>
+        {
+            orders.map((order,index)=> <OrdersRow key={order._id} order={order} index={index}></OrdersRow>)
+        }
     </tbody>
   </table>
 </div>
