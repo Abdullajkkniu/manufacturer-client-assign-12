@@ -106,7 +106,7 @@ const Login = () => {
 
                 </div>
             </div>
-            <hr className='w-25 mx-auto' />
+            <hr className='w-28 mx-auto' />
             <button onClick={() => signInWithGoogle()} className='flex justify-evenly w-96 google-btn mt-3 px-4  mx-auto p-2'> <img className='google-image' src={image1} alt="" /> Google Sign In</button>
         </div>
     );
