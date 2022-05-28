@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import '../Login/Login.css';
 import image1 from '../../images/google1.png';
+import useToken from '../../hooks/useToken';
 
 const Login = () => {
     const [userInfo, setUserInfo] = useState({
@@ -70,16 +71,16 @@ const Login = () => {
             }
         }
     }, [error]);
-
+    const [token]= useToken(user || user1)
 
     const navigate = useNavigate()
     const location = useLocation()
     const from = location.state?.from?.pathname || "/";
     useEffect(() => {
-        if (user) {
-            navigate(from)
+        if (token) {
+            navigate(from, {replace:true});
         }
-    }, [user])
+    }, [user, token])
 
 
     return (

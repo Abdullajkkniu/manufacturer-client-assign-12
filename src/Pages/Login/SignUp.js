@@ -71,7 +71,7 @@ const SignUp = () => {
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
     if(token){
-        navigate('/')
+        navigate('/purchase');
     }
     useEffect(() => {
         if (user) {
