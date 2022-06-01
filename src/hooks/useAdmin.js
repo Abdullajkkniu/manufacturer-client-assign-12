@@ -1,25 +1,25 @@
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 
-const useAdmin = user =>{
-    const [admin, setAdmin]= useState(false);
-    useEffect(()=>{
+const useAdmin = user => {
+    const [admin, setAdmin] = useState(false);
+    useEffect(() => {
         const email = user?.email;
-        if(email){
-            fetch(`http://localhost:5001/admin/${email}`,{
+        if (email) {
+            fetch(`https://peaceful-harbor-95705.herokuapp.com/admin/${email}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',
                     authorization: `Bearer ${localStorage.getItem('accessToken')}`
                 }
-                
+
             })
-            .then(res=> res.json())
-            .then(data=>{
-               
-                setAdmin(data.admin);
-            })
+                .then(res => res.json())
+                .then(data => {
+
+                    setAdmin(data.admin);
+                })
         }
-    },[user])
+    }, [user])
     return [admin];
 }
 export default useAdmin;
