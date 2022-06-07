@@ -9,5 +9,5 @@
 - Firebase authentication- login and signup page and handleing the error,loading etc.
 - Use mongodb and node js for server site and manage data properly
 - Make admin page, user order, user email,add product etc.
-- Tools: React , React Router ,Tailwind CSS, DaisyUi, Firebase, React -Hook- Form , ReactQuery , MongoDB ,Express js , Node js, JWT , Stripe , React-toastify .
+- Tools: React , React Router ,Tailwind CSS, DaisyUi, Firebase, React -Hook- Form , React-Query , MongoDB ,Express js , Node js, JWT , Stripe , React-toastify .
 
